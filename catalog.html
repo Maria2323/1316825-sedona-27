@@ -18,9 +18,28 @@
   </header>
   <main>
     <h1>Поиск гостиницы</h1>
-      <span>
-        <!--здесь будет фильтр для поиска гостиницы-->
-      </span>
+    <section>
+      <h2>Фильтр для поиска гостиницы</h2>
+      <fieldset>
+        <legend>Инфраструктура</legend>
+          <label><input type="checkbox" checked>Бассейн</label>
+          <label><input type="checkbox">Парковка</label>
+          <label><input type="checkbox">Wi-Fi</label>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+          <label><input type="checkbox" checked>Гостиница</label>
+          <label><input type="checkbox" checked>Мотель</label>
+          <label><input type="checkbox" checked>Аппартаменты</label>
+      </fieldset>
+      <div>
+        <p>Стоимость в сутки(Р):</p>
+        <output name="price">1</output>
+        <output name="price">3000</output>
+        <label><input type="range" min="1" max="4000"></label>
+        <button type="button">Показать</button>
+      </div>
+    </section>
     <ul>
       <li>
         <div><img src="https://via.placeholder.com/150x100" alt="Фото отеля"></div>
