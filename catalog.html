@@ -20,6 +20,7 @@
     <h1 class="visually-hidden">Поиск гостиницы</h1>
     <section>
       <h2 class="visually-hidden">Фильтр для поиска гостиницы</h2>
+      <form method="post" action="https://echo.htmlacademy.ru" oninput="price.value=price-filter.value">
       <fieldset>
         <legend>Инфраструктура</legend>
           <label><input type="checkbox" checked>Бассейн</label>
@@ -32,13 +33,14 @@
           <label><input type="checkbox" checked>Мотель</label>
           <label><input type="checkbox" checked>Аппартаменты</label>
       </fieldset>
-      <div>
-        <p>Стоимость в сутки(Р):</p>
+      <fieldset>
+        <legend>Стоимость в сутки(Р):</legend>
         <output name="price">1</output>
         <output name="price">3000</output>
-        <label><input type="range" min="1" max="4000"></label>
-        <button type="button">Показать</button>
-      </div>
+        <label><img src="img/filter-button.svg" alt="Ползунок, определяющий минимальную стоимость"><input type="range" min="1" max="4000" name="price-filter"></label>
+      </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <h2 class="visually-hidden">Результаты поиска</h2>
