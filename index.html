@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
-        <ul>
+        <img class="logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
+        <ul class="main-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -18,13 +21,13 @@
     </header>
     <main>
       <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-      <div>
+      <div class="main-photo">
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
       </div>
       <section>
         <h2 class="visually-hidden">Преимущества</h2>
-        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="slogan-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section>
         <h2 class="visually-hidden">Достоинства</h2>
@@ -80,35 +83,35 @@
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
         </div>
       </section>
-      <section>
+      <section class="booking">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p>Заинтересовались?</p>
+        <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,
         и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <button type="button" class="search">Поиск гостиницы в Седоне</button>
+        <form  class="booking-form" method="post" action="https://echo.htmlacademy.ru">
           <label>Дата заезда<img src="img/calendar.svg" alt="Календарик"><input type="date" name="arrival-date"></label>
           <label>Дата выезда<img src="img/calendar.svg" alt="Календарик"><input type="date" name="departure-date"></label>
           <label>Взрослые<button type="button">-</button><input type="text" value="2"><button type="button">+</button></label>
           <label>Дети<button type="button">-</button><input type="text" value="2"><button type="button">+</button></label>
-          <input type="submit" value="Найти">
+          <input class="search-button" type="submit" value="Найти">
         </form>
       </section>
       <div><img src="img/map.jpg" alt="Карта"></div>
     </main>
     <footer>
-      <div>
+      <div class="contacts-phone">
         <p>#VISITSEDONA</p>
         <p>Тел: +7 (495) 666-02-66</p>
       </div>
-      <div>
+      <div class="contacts-social">
         <ul>
           <li><a href=""><img src="img/tw-icon.svg" alt="Twitter"></a></li>
           <li><a href=""><img src="img/fb-icon.svg" alt="Facebook"></a></li>
           <li><a href=""><img src="img/youtube.svg" alt="Youtube"></a></li>
         </ul>
       </div>
-      <div>
+      <div class="contacts-creator">
         <a href="https://htmlacademy.ru/"><p>WEBSITE BY</p>
           <img src="img/logo-htmla.png" alt="HTML Academy"></a>
       </div>
