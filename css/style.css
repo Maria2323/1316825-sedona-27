@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -26,6 +26,8 @@ a {
   text-align: center;
 }
 .main-navigation {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
   color: black;
@@ -59,6 +61,7 @@ a {
   text-align: center;
 }
 .booking {
+  display: none;
   text-align: center;
   background-color: #ffffff;
 }
@@ -73,6 +76,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .booking .search {
   color: #ffffff;
@@ -96,10 +100,9 @@ a {
 .booking-form input {
   background-color: #f2f2f2;
   border: none;
+  text-transform: uppercase;
 }
 .booking-form .search-button {
-  width: 458px;
-  height: 58px;
   color: #ffffff;
   background-color: #81b3d2;
   font-size: 21px;
@@ -134,23 +137,18 @@ a {
 }
 .hotels {
   list-style: none;
+  text-transform: uppercase;
 }
 .button {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
-  text-align: left;
   border: none;
 }
 .detail {
-  width: 110px;
-  height: 27px;
   background-color: #81b3d2;
 }
 .book {
-  width: 142px;
-  height: 27px;
   background-color: #766357;
 }
 .hotel-name {
