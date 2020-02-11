@@ -60,6 +60,60 @@ a {
   line-height: 26px;
   text-align: center;
 }
+.features {
+  background-color: #81b3d2;
+}
+.features h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+.features p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+.features-2 {
+  background-color: #eeeeee;
+}
+.features-2 h3 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+.features-2 p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+.recommendations {
+  background-color: #ffffff;
+}
+.recommendations h3 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+.recommendations p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+.recommendations img {
+  text-align: center;
+}
 .booking {
   display: none;
   text-align: center;
@@ -134,6 +188,63 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+}
+/* вторая страница */
+.search-filter {
+  background-color: black;
+  background-image: url("../img/filter-background-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search-filter legend {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: left;
+}
+.search-filter label {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+}
+.search-filter output {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+.search-filter button {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.sort p {
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+.sort h3 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+}
+.sort button {
+  border: none;
+  background-color: transparent;
 }
 .hotels {
   list-style: none;

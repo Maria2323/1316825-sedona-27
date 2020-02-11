@@ -21,7 +21,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Поиск гостиницы</h1>
-    <section>
+    <section class="search-filter">
       <h2 class="visually-hidden">Фильтр для поиска гостиницы</h2>
       <form method="post" action="https://echo.htmlacademy.ru" oninput="price.value=price-filter.value">
       <fieldset>
@@ -45,17 +45,17 @@
         <button type="submit">Показать</button>
       </form>
     </section>
-    <section>
+    <section class="sort">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p>Найдено: 3</p>
-      <p>Сортировка:</p>
-      <button type="button">По цене</button>
-      <button type="button">По типу</button>
-      <button type="button">По рейтингу</button>
-      <div>
-        <button type="button"><img src="img/icon-up-dir.svg" alt="Кнопка для отображения списка по убыванию"></button>
-        <button type="button"><img src="img/icon-down-dir.svg" alt="Кнопка для отображения списка по возрастанию"></button>
-      </div>
+        <h3>Найдено: 3</h3>
+          <p>Сортировка:</p>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По рейтингу</button>
+        <div>
+          <button type="button"><img src="img/icon-up-dir.svg" alt="Кнопка для отображения списка по убыванию"></button>
+          <button type="button"><img src="img/icon-down-dir.svg" alt="Кнопка для отображения списка по возрастанию"></button>
+        </div>
     </section>
     <ul class="hotels">
       <li>
