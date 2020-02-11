@@ -115,9 +115,7 @@ a {
   text-align: center;
 }
 form {
-  display: none;
   text-align: center;
-  background-color: #ffffff;
 }
 .booking h3 {
   color: #000000;
@@ -196,6 +194,10 @@ form {
   background-repeat: no-repeat;
   background-position: center;
 }
+.search-filter fieldset {
+  border: none;
+  text-align: left;
+}
 .search-filter legend {
   color: #ffffff;
   font-size: 16px;
@@ -227,6 +229,31 @@ form {
   text-align: left;
   background-color: transparent;
   border: 2px solid #ffffff;
+}
+.line-1 {
+  background-color: #ffffff;
+  opacity: 30%;
+  width: 317px;
+  height: 2px;
+}
+.line-2 {
+  background-color: #ffffff;
+  width: 248px;
+  height: 2px;
+}
+.slider-1 {
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 22px;
+}
+.slider-2 {
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 22px;
 }
 .sort p {
   color: #000000;
