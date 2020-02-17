@@ -22,12 +22,11 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.logo {
-  text-align: center;
-}
 .main-navigation {
   padding: 0;
   margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 14px;
   line-height: 26px;
   color: black;
@@ -35,6 +34,20 @@ a {
   text-align: center;
   background-color: #ffffff;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1200px;
+  height: 56px;
+}
+.main-navigation li:not(:nth-child(3)) {
+  width: 239px;
+  height: 56px;
+  padding-top: 22px;
+}
+.main-navigation li:nth-child(3) {
+  width: 244px;
+  padding-top: 22px;
 }
 .main-navigation a {
   color: #000000;
@@ -43,8 +56,7 @@ a {
   background-image: url("../img/background-photo-1-3.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-}
-.main-photo img {
+  padding-top: 132px;
   text-align: center;
 }
 .slogan {
@@ -115,6 +127,7 @@ a {
   text-align: center;
 }
 form {
+  display: none;
   text-align: center;
 }
 .booking h3 {
@@ -161,24 +174,53 @@ form {
   line-height: 26px;
   text-align: center;
 }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  max-height: 120px;
+}
 .contacts-phone p {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: left;
   color: #000000;
-}
-.contacts-social img {
-  background-color: #81b3d2;
-  width: 46px;
-  height: 48px;
-  padding: 6px;
+  margin-right: 132px;
 }
 .contacts-social ul {
   list-style: none;
-  text-align: center;
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts-social li {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+.contacts-social img:first-child {
+  margin-right: 15px;
+  margin-left: 14px;
+  margin-top: 17px;
+  margin-bottom: 16px;
+}
+.contacts-social img:nth-child(2) {
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.contacts-social img:last-child {
+  margin-right: 13px;
+  margin-left: 13px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .contacts-creator {
+  display: flex;
   text-align: right;
 }
 .contacts-creator p {
@@ -276,11 +318,26 @@ form {
 .hotels {
   list-style: none;
   text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.hotels li {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1200px;
+  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+}
+.hotels li:first-child {
+  border-top: 1px solid rgba(0, 1, 1, 0.2);
 }
 .button {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
   border: none;
 }
 .detail {
@@ -295,6 +352,7 @@ form {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+  padding-left: 30px;
 }
 .hotel-type,
 .hotel-price {
@@ -303,6 +361,7 @@ form {
   line-height: 21px;
   font-weight: 400;
   text-align: left;
+  padding-left: 30px;
 }
 .rating {
   color: #666666;
