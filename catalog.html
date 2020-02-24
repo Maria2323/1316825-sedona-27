@@ -24,39 +24,45 @@
       <h1 class="visually-hidden">Поиск гостиницы</h1>
       <section class="search-filter">
         <h2 class="visually-hidden">Фильтр для поиска гостиницы</h2>
-        <form method="post" action="https://echo.htmlacademy.ru" oninput="price.value=price-filter.value">
-        <fieldset>
-          <legend>Инфраструктура</legend>
-            <label><input type="checkbox" checked>Бассейн</label>
-            <label><input type="checkbox">Парковка</label>
-            <label><input type="checkbox">Wi-Fi</label>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-            <label><input type="checkbox" checked>Гостиница</label>
-            <label><input type="checkbox" checked>Мотель</label>
-            <label><input type="checkbox" checked>Аппартаменты</label>
-        </fieldset>
-        <fieldset>
-          <legend>Стоимость в сутки(Р):</legend>
-          <output name="price">1</output>
-          <output name="price">3000</output>
-              <div class="line-1"></div>
-              <div class="line-2"></div>
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+          <ul class="infrastructure">
+              <li><p>Инфраструктура</p></li>
+              <li><img src="img/checkbox-on.svg"><label><input type="checkbox" checked>Бассейн</label></li>
+              <li><img src="img/checkbox-off.svg"><label><input type="checkbox">Парковка</label></li>
+              <li><img src="img/checkbox-off.svg"><label><input type="checkbox">Wi-Fi</label></li>
+          </ul>
+          <ul class="house-type">
+              <li><p>Тип жилья:</p></li>
+              <li><img src="img/checkbox-on.svg"><label><input type="checkbox" checked>Гостиница</label></li>
+              <li><img src="img/checkbox-on.svg"><label><input type="checkbox" checked>Мотель</label></li>
+              <li><img src="img/checkbox-on.svg"><label><input type="checkbox" checked>Аппартаменты</label></li>
+          </ul>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (Р):</div>
+            <div class="filter-range-price">
+              <label class="min-price">от <input type="text" name="price-min" value="0"></label>
+              <label class="max-price">до <input type="text" name="price-max" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="line-1">
+                <div class="line-2"></div>
+              </div>
               <div class="slider-1"></div>
               <div class="slider-2"></div>
-        </fieldset>
-          <button type="submit">Показать</button>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </form>
       </section>
+
       <section class="sort">
         <h2 class="visually-hidden">Результаты поиска</h2>
           <h3>Найдено: 3</h3>
-            <p>Сортировка:</p>
-            <button type="button">По цене</button>
-            <button type="button">По типу</button>
-            <button type="button">По рейтингу</button>
-          <div>
+          <p>Сортировка:</p>
+            <div><button type="button" class="price-button">По цене</button></div>
+            <div class="type-button"><button type="button">По типу</button></div>
+            <div class="rating-button"><button type="button">По рейтингу</button></div>
+          <div class="up-down-buttons">
             <button class="button-up" type="button"><img src="img/icon-up-dir.svg" alt="Кнопка для отображения списка по убыванию"></button>
             <button class="button-down" type="button"><img src="img/icon-down-dir.svg" alt="Кнопка для отображения списка по возрастанию"></button>
           </div>
