@@ -32,24 +32,24 @@
           <div class="infrastructure">
             <p>Инфраструктура</p>
             <ul>
-              <li><label><input type="checkbox" checked>Бассейн</label></li>
-              <li class="not-checked"><label><input type="checkbox">Парковка</label></li>
-              <li class="not-checked"><label><input type="checkbox">Wi-Fi</label></li>
+              <li><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
+              <li class="not-checked"><label><input type="checkbox" name="parking">Парковка</label></li>
+              <li class="not-checked"><label><input type="checkbox" name="wifi">Wi-Fi</label></li>
             </ul>
           </div>
           <div class="house-type">
             <p>Тип жилья:</p>
             <ul>
-              <li><label><input type="checkbox" checked>Гостиница</label></li>
-              <li><label><input type="checkbox" checked>Мотель</label></li>
-              <li><label><input type="checkbox" checked>Аппартаменты</label></li>
+              <li><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
+              <li><label><input type="checkbox" name="motel" checked>Мотель</label></li>
+              <li><label><input type="checkbox" name="apartaments" checked>Аппартаменты</label></li>
             </ul>
           </div>
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (Р):</div>
             <div class="filter-range-price">
-              <label class="min-price">от <input type="text" name="price-min" value="0"></label>
-              <label class="max-price">до <input type="text" name="price-max" value="3000"></label>
+              <label class="min-price">от <input type="text" name="price-min" value="0" required></label>
+              <label class="max-price">до <input type="text" name="price-max" value="3000" required></label>
             </div>
             <div class="range-controls">
               <div class="line-1">
@@ -58,7 +58,7 @@
               <div class="slider-1"></div>
               <div class="slider-2"></div>
             </div>
-          <button class="btn-transparent" type="submit">Показать</button>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </section>

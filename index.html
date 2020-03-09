@@ -30,9 +30,7 @@
           <div class="main-photo">
             <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
           </div>
-          <div class="frame">
-            <img src="img/polygon.png" width="1203" height="59" alt="белая фигурная рамка">
-          </div>
+          <div class="frame"></div>
           <section class="main-slogan">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="slogan">Седона - небольшой городок в Аризоне,<br>
@@ -123,29 +121,29 @@
             <button type="button" class="search">Поиск гостиницы в Седоне</button>
           </div>
 
-          <div class="form">
+          <div class="form form-hidden">
             <form  class="booking-form" method="post" action="https://echo.htmlacademy.ru">
               <div class="date-field">
-                <label for="date-of-arrival">Дата заезда:</label><input class="date" type="text" name="arrival-date" value="24 апреля 2017" id="date-of-arrival">
-                <button class="calendar" type="button"><span class="calendar-icon"></span></button>
+                <label for="date-of-arrival">Дата заезда:</label><input class="date" type="text" name="arrival-date" value="24 апреля 2017" id="date-of-arrival" required>
+                <button class="calendar" type="button"></button>
               </div>
               <div  class="date-field">
-                <label for="date-of-departure">Дата выезда:</label><input class="date" type="text" name="departure-date" value="4 июля 2017" id="date-of-departure">
-                <button class="calendar" type="button"><span class="calendar-icon"></span></button>
+                <label for="date-of-departure">Дата выезда:</label><input class="date" type="text" name="departure-date" value="4 июля 2017" id="date-of-departure" required>
+                <button class="calendar" type="button"></button>
               </div>
               <div class="number-people">
-                <label for="adults-number">Взрослые:</label><button class="minus minus-adults" type="button"></button><input type="text" name="adults" value="2" id="adults-number"><button class="plus plus-adults" type="button"></button>
-                <label for="kids-number">Дети:</label><button class="minus minus-kids" type="button"></button><input type="text" name="kids" value="0" id="kids-number"><button class="plus plus-kids" type="button"></button>
+                <label for="adults-number">Взрослые:</label><button class="minus minus-adults" type="button"></button><input type="text" name="adults" value="2" id="adults-number" required><button class="plus plus-adults" type="button"></button>
+                <label for="kids-number">Дети:</label><button class="minus minus-kids" type="button"></button><input type="text" name="kids" value="0" id="kids-number" required><button class="plus plus-kids" type="button"></button>
               </div>
               <input class="search-button" type="submit" value="Найти">
             </form>
           </div>
         </section>
-        <div><img src="img/map.jpg"  width="1200" height="594" alt="Карта"></div>
+        <div class="map"><img src="img/map.jpg"  width="1200" height="594" alt="Карта"></div>
       </main>
 
 
-      <footer class="main-footer">
+      <footer class="main-footer footer">
         <div class="contacts-phone">
           <p class="hashtag">#visitSEDONA</p>
           <a href="tel:+74956660266" class="phone">Тел: +7 (495) 666-02-66</a>
@@ -163,5 +161,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
