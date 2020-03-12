@@ -447,6 +447,7 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 .booking-form div {
   display: -webkit-box;
