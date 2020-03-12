@@ -1,4 +1,3 @@
-
 var button = document.querySelector('.search');
 var form = document.querySelector('.form');
 var clickHandler = function() {
