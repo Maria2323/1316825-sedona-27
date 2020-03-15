@@ -69,7 +69,7 @@ a {
 .logo {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 599px;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
@@ -78,7 +78,7 @@ a {
 .header > a {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 599px;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
@@ -105,6 +105,16 @@ a {
   text-align: right;
   padding-right: 72px;
 }
+.main-navigation:first-of-type li:last-of-type {
+  padding-left: 73px;
+}
+.main-navigation:last-of-type li:first-of-type {
+  padding-right: 73px;
+}
+.main-navigation .page-map-state {
+  width: 90px;
+  letter-spacing: 0.4px;
+}
 .active-page:visited {
   color: #766357;
 }
@@ -114,14 +124,12 @@ a {
 .not-active-page:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
-
 .photo-frame {
   background-color: #99a3ae;
   background-image: url("../img/background-photo-1-3.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 717px;
+  height: 725px;
   position: relative;
 }
 .main-photo {
@@ -145,9 +153,8 @@ a {
   top: 509px;
   left: 0;
   width: 1200px;
-  padding: 56px 0;
   background-color: #ffffff;
-  min-height: 216px;
+  height: 216px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -159,7 +166,7 @@ a {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: flex-start;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -171,17 +178,17 @@ a {
   font-weight: 700;
   text-align: center;
   max-width: 500px;
-  margin-top: 0;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 18px;
 }
 .slogan-reasons {
   color: #333333;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
+  letter-spacing: 0.1px;
 }
-
-
 .features-stroke {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +201,7 @@ a {
 .features-block,
 .features-block-2 {
   width: 400px;
+  height: 256px;
 }
 .features,
 .features-2 {
@@ -211,15 +219,10 @@ a {
   align-items: center;
   min-height: 142px;
   position: relative;
-  top: 50%;
+  top: 120px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-}
-.features div,
-.features-2 div {
-  width: 100px;
-  position: relative;
 }
 .features-block {
   background-color: #81b3d2;
@@ -244,6 +247,7 @@ a {
 }
 .features-2 h3 {
   color: #000000;
+  margin-top: 2px;
 }
 .features p,
 .features-2 p {
@@ -267,8 +271,8 @@ a {
 .features-2 .number-features::before {
   content: "";
   position: absolute;
-  top: 35px;
-  left: 25px;
+  top: 76px;
+  left: 175px;
   height: 1px;
   width: 9px;
 }
@@ -276,8 +280,8 @@ a {
 .features-2 .number-features::after {
   content: "";
   position: absolute;
-  top: 35px;
-  left: 64px;
+  top: 76px;
+  right: 175px;
   height: 1px;
   width: 9px;
 }
@@ -299,7 +303,6 @@ a {
 }
 .recommendations {
   background-color: #ffffff;
-  height: 330px;
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,9 +311,9 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -321,8 +324,8 @@ a {
   line-height: 21px;
   font-weight: 700;
   text-align: center;
-  padding-top: 4px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 12px;
 }
 .recommendations p {
   color: #333333;
@@ -330,7 +333,6 @@ a {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  padding-bottom: 71px;
 }
 .recommendations:first-of-type p {
   max-width: 285px;
@@ -338,20 +340,35 @@ a {
 .recommendations:last-of-type p {
   max-width: 310px;
 }
-.recommendations img {
-  text-align: center;
-  padding-top: 60px;
+.recommendations .icon-house {
+  width: 75px;
+  height: 72px;
+  background: url("../img/icon-1.svg") no-repeat center;
+  margin-top: -12px;
 }
-.recommendations:nth-child(3) img {
-  padding-top: 62px;
+.recommendations .icon-burger {
+  width: 74px;
+  height: 70px;
+  background: url("../img/icon-3.svg") no-repeat center;
+  margin-top: -8px;
 }
-.recommendations:last-child img {
-  padding-top: 56px;
+.recommendations .icon-gift {
+  width: 64px;
+  height: 76px;
+  background: url("../img/icon-2.svg") no-repeat center;
+  margin-top: -14px;
 }
-
-
+.booking {
+  width: 1200px;
+  height: 291px;
+  position: relative;
+}
 .booking-hotel {
-  min-height: 291px;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  height: 244px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,12 +390,8 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   background-color: #766357;
-  width: 568px;
-  height: 86px;
   border: none;
-  margin-right: 316px;
-  margin-left: 316px;
-  margin-top: 52px;
+  padding: 29px 139px 31px 139px;
   cursor: pointer;
 }
 .search:hover {
@@ -388,10 +401,18 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
-
-
 form {
   text-align: center;
+}
+.form {
+  position: absolute;
+  top: 291px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 568px;
+  height: 395px;
 }
 .form-hidden {
   display: none;
@@ -402,10 +423,7 @@ form {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 57px;
-  padding-bottom: 12px;
+  margin: 0;
 }
 .booking p {
   color: #333333;
@@ -415,6 +433,7 @@ form {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  margin-top: -20px;
 }
 .booking-form label {
   font-size: 14px;
@@ -422,11 +441,6 @@ form {
   font-weight: 700;
 }
 .booking-form {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
   width: 568px;
   height: 395px;
   background-color: #ffffff;
@@ -447,6 +461,7 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 .booking-form div {
@@ -483,7 +498,7 @@ form {
 .calendar::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 8px;
   height: 22px;
   width: 22px;
@@ -507,11 +522,11 @@ form {
 .minus::before {
   content: "";
   height: 3px;
-  width: 12px;
+  width: 10px;
   background: #aaaaaa;
   position: absolute;
   top: 18px;
-  left: 11px;
+  left: 13px;
 }
 .plus::before {
   content: "";
@@ -520,7 +535,7 @@ form {
   background: #aaaaaa;
   position: absolute;
   top: 18px;
-  left: 12px;
+  left: 13px;
 }
 .plus::after {
   content: "";
@@ -529,7 +544,7 @@ form {
   background: #aaaaaa;
   position: absolute;
   top: 14px;
-  left: 16px;
+  left: 17px;
 }
 .plus-adults {
   margin-right: 53px;
@@ -541,7 +556,7 @@ form {
   margin-right: 0;
 }
 .minus-kids {
-  margin-left: 41px;
+  margin-left: 26px;
 }
 .minus:hover::before,
 .plus:hover::before,
@@ -582,7 +597,8 @@ form {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 196px;
+  padding: 16px 196px 17px 196px;
+  margin-top: 24px;
   cursor: pointer;
 }
 .booking-form .search-button:hover {
@@ -596,9 +612,7 @@ form {
   width: 1200px;
   height: 593px;
 }
-
 /*футер*/
-
 .main-footer {
   position: absolute;
   left: 0;
@@ -606,16 +620,22 @@ form {
   bottom: 0;
 }
 .footer {
+  height: 120px;
+  background-color: rgba(255,255,255,.9);
+}
+.footer-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  min-height: 120px;
-  background-color: rgba(255,255,255,.9);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 967px;
+  margin-left: 132px;
+  height: 120px;
 }
 .contacts-phone {
   display: -webkit-box;
@@ -631,19 +651,19 @@ form {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: left;
   color: #000000;
 }
 .hashtag {
-  margin-top: 36px;
-  margin-bottom: 0;
+  margin-top: 33px;
+  margin-bottom: 6px;
 }
 .phone {
   color: #000000;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   margin-top: 0;
 }
 .contacts-social {
@@ -656,6 +676,7 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 2px;
 }
 .contacts-social a {
   content: "";
@@ -700,6 +721,8 @@ form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 32px;
+  margin-bottom: 2px;
 }
 .contacts-creator p {
   color: #000000;
@@ -719,38 +742,31 @@ form {
 .html-logo:active {
   background: url("../img/logo-name-grey.png") no-repeat center;
 }
-
-
 /* вторая страница */
-
-
 .search-filter {
   background-color: #5d7284;
-  background-image: url("../img/filter-background-3.jpg");
+  background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 217px;
+  height: 218px;
 }
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 32px;
-  padding-top: 17px;
+  margin: 0 72px 0 72px;
+  padding-top: 28px;
 }
 .filter ul {
-  width: 214px;
-}
-.infrastructure,
-.house-type {
-  margin-top: 14px;
+  width: 255px;
+  padding: 0;
 }
 .infrastructure li,
 .house-type li {
   list-style: none;
   text-align: left;
   height: 30px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   position: relative;
 }
 .filter p {
@@ -759,9 +775,7 @@ form {
   line-height: 21px;
   font-weight: 700;
   text-align: left;
-  margin: 0;
-  margin-bottom: 18px;
-  margin-left: 40px;
+  margin: 0 0 24px 0;
 }
 .infrastructure label,
 .house-type label {
@@ -769,41 +783,49 @@ form {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  position: absolute;
-  bottom: 6px;
-  left: 40px;
+  position: relative;
+  padding-left: 40px;
 }
-.filter li::before {
+.house-type label {
+  padding-left: 42px;
+}
+.checkbox-label::before {
   content: "";
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat top left;
   position: absolute;
   top: 0;
   left: 0;
-  width: 26px;
-  height: 27px;
-}
-.filter .not-checked::before {
-  content: "";
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 26px;
-  height: 27px;
+  width: 23px;
+  height: 23px;
 }
 .infrastructure input,
 .house-type input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  padding: 0;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
+.house-type input:checked~.checkbox-label::before,
+.infrastructure input:checked~.checkbox-label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 23px;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0;
+}
 .filter-range {
-  padding-left: 265px;
-  padding-top: 14px;
+  padding-left: 228px;
   color: #ffffff;
   text-transform: uppercase;
-  width: 316px;
+  width: 318px;
 }
 .filter-range-title {
   font-weight: 700;
@@ -811,10 +833,11 @@ form {
   line-height: 21px;
   text-align: left;
   margin-bottom: 9px;
+  margin-left: 1px;
 }
 .filter-range-price {
   position: relative;
-  height: 36px;
+  height: 34px;
   font-size: 0;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
@@ -823,7 +846,7 @@ form {
 .filter-range-price label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 36px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -844,10 +867,10 @@ form {
   width: 90px;
 }
 .filter-range-price .min-price {
-  padding-left:  32px;
+  padding-left:  33px;
 }
 .filter-range-price .max-price {
-  padding-left: 55px;
+  padding-left: 58px;
 }
 .filter-range-price input {
   width: 50px;
@@ -899,8 +922,8 @@ form {
 }
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 96px 0 86px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -914,8 +937,6 @@ form {
   color: #000000;
   background: #ffffff;
 }
-
-
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,12 +947,15 @@ form {
   width: 1200px;
   height: 86px;
 }
+.sort div {
+
+}
 .sort p {
   color: #000000;
   font-size: 12px;
   font-weight: 400;
   text-align: left;
-  padding-left: 49px;
+  padding-left: 47px;
   padding-right: 7px;
 }
 .sort h3 {
@@ -941,11 +965,15 @@ form {
   text-align: left;
   padding-left: 72px;
 }
-.sort div {
-  padding-left: 33px;
-}
 .price-button {
   color: #81b3d2;
+  padding-left: 33px;
+}
+.type-button {
+  padding-left: 27px;
+}
+.rating-button {
+  padding-left: 34px;
 }
 .sort button {
   font-size: 12px;
@@ -968,6 +996,10 @@ form {
 .type-button button:active,
 .rating-button button:active {
   color: #000000;
+}
+.sort .up-down-buttons {
+  padding-left: 7px;
+  margin-left: 496px;
 }
 .button-up {
   background-image: url("../img/icon-up-grey.png");
@@ -996,23 +1028,14 @@ form {
 .button-down:visited {
   background-image: url("../img/icon-down-blue.png");
 }
-.sort .up-down-buttons {
-  padding-left: 6px;
-  margin-left: 474px;
-}
-
-
-
 .hotels-list {
   list-style: none;
   text-transform: uppercase;
   width: 1200px;
-  margin-left: -40px;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 .hotels-list li {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,16 +1043,17 @@ form {
   -ms-flex-pack: justify;
   justify-content: flex-start;
   width: 1200px;
-  min-height: 90px;
+  height: 94px;
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
-  padding: 30px 0;
+  padding: 25px 0 31px 0;
 }
 .hotels-list li:first-child {
   border-top: 1px solid rgba(0, 1, 1, 0.2);
 }
 .list-photo {
   padding-left: 72px;
-  height: 90px;
+  padding-top: 5px;
+  height: 94px;
 }
 .hotel-rating {
   display: -webkit-box;
@@ -1038,10 +1062,9 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 891px;
-  margin-left: 30px;
-  height: 90px;
-  margin-top: -2px;
+  width: 896px;
+  margin-left: 24px;
+  height: 96px;
 }
 .hotel {
   display: -webkit-box;
@@ -1071,13 +1094,13 @@ form {
 }
 .hotel-info p {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 2px;
 }
 .hotel-type p {
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 .hotel-price p {
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 }
 .hotel-type,
 .hotel-price {
@@ -1095,7 +1118,7 @@ form {
 }
 .detail {
   background-color: #81b3d2;
-  padding: 3px 17px;
+  padding: 3px 17px 5px 17px;
 }
 .detail:hover {
   background-color: #669ec0;
@@ -1106,7 +1129,7 @@ form {
 }
 .book {
   background-color: #766357;
-  padding: 4px 16px;
+  padding: 4px 18px 6px 16px;
 }
 .book:hover {
   background-color: #604e43;
@@ -1121,10 +1144,10 @@ form {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   margin-left: 6px;
   cursor: pointer;
+  letter-spacing: 0.2px;
 }
 .hotel-name:hover {
   color: #81b3d2;
@@ -1155,6 +1178,7 @@ form {
   -ms-flex-align: end;
   align-items: flex-end;
   height: 90px;
+  margin-top: 4px;
 }
 .stars {
   display: -webkit-box;
@@ -1166,6 +1190,7 @@ form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 90px;
 }
 .stars div {
   width: 18px;
@@ -1173,7 +1198,7 @@ form {
   background: url("../img/star.svg") no-repeat center;
 }
 .stars div:not(:last-child) {
-  padding-right: 5px;
+  margin-right: 6px;
 }
 .rating {
   color: #666666;
@@ -1183,4 +1208,5 @@ form {
   text-align: center;
   background-color: #f2f2f2;
   margin: 0;
+  padding: 3px 12px 3px 16px;
 }

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-    <link href="css/normalize-min.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,7 @@
           </ul>
           <img class="logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
           <ul class="main-navigation">
-            <li><a href="#">Карта штата</a></li>
+            <li><a href="#" class="page-map-state">Карта штата</a></li>
             <li><a href="catalog.html" class="not-active-page">Гостиницы</a></li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
           <div class="frame"></div>
           <section class="main-slogan">
             <h2 class="visually-hidden">Преимущества</h2>
-            <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="slogan-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </section>
         </div>
@@ -43,8 +43,8 @@
           <div class="features-block">
             <div class="features">
               <h3>Настоящий городок</h3>
-              <div><p class="number-features">№1</p></div>
-              <p>Седона - не аттракцион для туристов,<br>
+              <p class="number-features">№1</p>
+              <p>Седона — не аттракцион для туристов,<br>
                 там течет своя жизнь</p>
             </div>
           </div>
@@ -53,18 +53,18 @@
         <section  class="features-stroke">
           <h2 class="visually-hidden">Рекомендации</h2>
           <div class="recommendations">
-            <img src="img/icon-1.svg"  width="75" height="72" alt="Домик">
+            <div class="icon-house"></div>
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="recommendations">
-            <img src="img/icon-3.svg" width="74" height="70" alt="Бургер">
+            <div class="icon-burger"></div>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер,<br>
               вы не разочаруетесь!</p>
           </div>
           <div class="recommendations">
-            <img src="img/icon-2.svg" width="64" height="76" alt="Подарок">
+            <div class="icon-gift"></div>
             <h3>Сувениры</h3>
             <p>Не только Китайского, но и местного производства!</p>
           </div>
@@ -76,7 +76,7 @@
             <div class="features">
               <h3>Там есть <br>
                 мост дьявола</h3>
-              <div><p class="number-features">№2</p></div>
+              <p class="number-features">№2</p>
               <p>Да, по нему можно пройти! Если конечно<br>
                 Вы осмелитесь</p>
             </div>
@@ -87,14 +87,14 @@
           <div class="features-block-2">
             <div  class="features-2">
               <h3>Небольшая площадь</h3>
-              <div><p class="number-features">№3</p></div>
+              <p class="number-features">№3</p>
               <p>Все достопримечательности находятся очень близко</p>
             </div>
           </div>
           <div class="features-block-2">
             <div  class="features-2">
               <h3>Красивая дорога</h3>
-              <div><p class="number-features">№4</p></div>
+              <p class="number-features">№4</p>
               <p>Ехать в Седону из Лас Вегаса совсем<br>
                 не скучно</p>
             </div>
@@ -102,7 +102,7 @@
           <div class="features-block-2">
             <div class="features-2">
               <h3>Мало туристов</h3>
-              <div><p class="number-features">№5</p></div>
+              <p class="number-features">№5</p>
               <p>Большинство едет в Гранд-Каньон<br>
                 и толпится там</p>
             </div>
@@ -140,23 +140,25 @@
 
 
       <footer class="main-footer footer">
-        <div class="contacts-phone">
-          <p class="hashtag">#visitSEDONA</p>
-          <a href="tel:+74956660266" class="phone">Тел: +7 (495) 666-02-66</a>
-        </div>
-        <div class="contacts-social">
-        <a href="" class="twitter"></a>
-          <a href="" class="facebook"></a>
-          <a href="" class="youtube"></a>
-        </div>
-        <div class="contacts-creator">
-          <a class="contacts-creator" href="https://htmlacademy.ru/intensive/htmlcss">
-            <p>WEBSITE BY</p>
-            <div class="html-logo"></div>
-          </a>
+        <div class="footer-block">
+          <div class="contacts-phone">
+            <p class="hashtag">#visitSEDONA</p>
+            <a href="tel:+74956660266" class="phone">Тел: +7(495) 666-02-66</a>
+          </div>
+          <div class="contacts-social">
+            <a href="" class="twitter"></a>
+            <a href="" class="facebook"></a>
+            <a href="" class="youtube"></a>
+          </div>
+          <div class="contacts-creator">
+            <a class="contacts-creator" href="https://htmlacademy.ru/intensive/htmlcss">
+              <p>WEBSITE BY</p>
+              <div class="html-logo"></div>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
